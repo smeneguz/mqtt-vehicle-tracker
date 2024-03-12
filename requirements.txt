@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+tortoise-orm
+aiopg
+paho-mqtt
+python-dotenv
