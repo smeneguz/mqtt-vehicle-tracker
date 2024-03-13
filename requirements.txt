@@ -4,3 +4,5 @@ tortoise-orm
 aiopg
 paho-mqtt
 python-dotenv
+asyncpg
+asyncio

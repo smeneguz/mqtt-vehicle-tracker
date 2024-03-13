@@ -1,18 +1,19 @@
-# docker-compose.yml
 version: '3.8'
 services:
   web:
     build: .
     ports:
-      - "8000:80"
+      - "8001:80"
     depends_on:
       - db
     env_file:
-      - .env
+      - .env.dev.web
   db:
     image: postgres:13
+    ports:
+      - "5432:5432"  # This line sets the custom port mapping
     env_file:
-      - .env
+      - .env.dev.db
     volumes:
       - postgres_data:/var/lib/postgresql/data
 volumes:

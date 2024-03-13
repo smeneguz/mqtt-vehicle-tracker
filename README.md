@@ -8,6 +8,9 @@ Installa le dipendenze:
 
 pip install -r requirements.txt
 
+Create and Fill .env from .env.example
+Same thing for .env.dev.db and .env.dev.web
+
 
 # MQTT Dashboard Project
 
@@ -27,3 +30,9 @@ To start the project, run the following command in the root directory:
 
 ```bash
 docker-compose up --build
+```
+
+In app: 
+```bash
+uvicorn main:app
+```
